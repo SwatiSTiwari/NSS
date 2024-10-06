@@ -11,10 +11,15 @@ import Gallery from './components/Gallery';
 import Announcements from './components/Announcements';
 import ReportingSection from './components/ReportingSection';
 import TrackingSection from './components/TrackingSection';
+import Program from './components/Program';
+import Committee from './components/Committee';
+import Volunteer from './components/Volunteer';
+
 function Layout() {
   return (
     <>
       <Header />
+      
       <HeroSection />
       <EventSection />
       <CommunityForum />
@@ -22,7 +27,6 @@ function Layout() {
       <Announcements />
       <ReportingSection />
       <TrackingSection />
-
       <AboutSection />
       <Footer />
     </>
@@ -36,6 +40,10 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route path="/events" element={<EventSection />} />
         <Route path="/community" element={<CommunityForum />} />
+        <Route path="/po" element={<Program />} />
+        <Route path="/cmt" element={<Committee />} />
+        <Route path="/volun" element={<Volunteer />} />
+       
         {/* Define other routes if needed */}
       </Routes>
     </Router>
